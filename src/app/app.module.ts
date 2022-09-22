@@ -13,6 +13,12 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { Form1Component } from './form1/form1.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -26,8 +32,14 @@ import { MatSliderModule } from '@angular/material/slider';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'form1', component: Form1Component },
     ]),
     BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
   ],
   declarations: [
     AppComponent,
@@ -37,6 +49,7 @@ import { MatSliderModule } from '@angular/material/slider';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
+    Form1Component,
   ],
   bootstrap: [AppComponent],
 })
